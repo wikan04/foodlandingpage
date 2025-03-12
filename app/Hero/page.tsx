@@ -10,7 +10,7 @@ export default function Heropage() {
             Good Food Us <br className="hidden lg:inline-block" />
             Good Mood
           </h1>
-          <div className="inline-block lg:hidden w-full">
+          <div className="inline-block md:hidden w-full">
             <img
               className="rounded object-cover object-center"
               alt="hero"
@@ -31,7 +31,7 @@ export default function Heropage() {
             </button>
           </div>
         </div>
-        <div className="hidden lg:inline-block w-5/6 md:w-1/4 lg:w-full lg:max-w-3xl">
+        <div className="hidden md:block w-1/2 lg:w-full lg:max-w-3xl">
           <img
             className="rounded object-cover object-center"
             alt="hero"
