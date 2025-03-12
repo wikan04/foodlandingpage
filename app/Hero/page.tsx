@@ -6,7 +6,7 @@ export default function Heropage() {
     >
       <div className="mx-auto flex flex-col items-center px-5 py-24 md:flex-row">
         <div className="mb-16 flex flex-col text-left md:mb-0 md:w-1/2 md:items-start md:pr-16  lg:flex-grow lg:pr-24">
-          <h1 className="title-font mb-4 text-4xl font-bold text-sushi sm:text-5xl">
+          <h1 className="title-font mb-4 text-4xl font-semibold text-sushi sm:text-5xl">
             Good Food Us <br className="hidden lg:inline-block" />
             Good Mood
           </h1>
