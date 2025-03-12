@@ -6,7 +6,6 @@ Pastikan Anda telah menginstal:
 
 - [Node.js](https://nodejs.org/) (disarankan versi LTS)
 - [Git](https://git-scm.com/)
-- [Vercel CLI](https://vercel.com/docs/cli)
 
 ## 🚀 Instalasi
 
