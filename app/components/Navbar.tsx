@@ -24,11 +24,14 @@ export default function Navbar() {
         isScrolled ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto flex flex-col flex-wrap items-center p-5 md:flex-row">
-        <a className="title-font mb-4 flex items-center md:mb-0">
-          <img src="/elemesicon.jpg" alt="" />
+      <div className="container mx-auto flex items-center justify-between p-5">
+        {/* Logo */}
+        <a className="flex items-center">
+          <img src="/elemesicon.jpg" alt="Elemes Icon" className="h-8" />
         </a>
-        <nav className="flex flex-wrap items-center justify-center text-base md:mr-auto md:ml-auto">
+
+        {/* Menu untuk desktop */}
+        <nav className="hidden md:flex flex-wrap items-center text-base">
           <a className="mr-5 text-boulder font-medium hover:text-gray-900">
             Home
           </a>
@@ -52,14 +55,21 @@ export default function Navbar() {
             Contact Us
           </a>
         </nav>
-        <div className="flex justify-center">
-          <button className="mr-1 inline-flex px-6 py-2 text-md text-gray-700 font-medium focus:outline-none">
+
+        {/* Tombol untuk desktop */}
+        <div className="hidden md:flex items-center">
+          <button className="mr-4 px-6 py-2 text-md text-gray-700 font-medium focus:outline-none">
             Masuk
           </button>
-          <button className="inline-flex rounded-full border-0 bg-sushi px-6 py-2 text-md text-white font-medium focus:outline-none">
+          <button className="rounded-full border-0 bg-sushi px-6 py-2 text-md text-white font-medium focus:outline-none">
             Daftar Sekarang
           </button>
         </div>
+
+        {/* Tombol "Daftar Sekarang" untuk mobile */}
+        <button className="md:hidden rounded-full border-0 bg-sushi px-6 py-2 text-md text-white font-medium focus:outline-none">
+          Daftar Sekarang
+        </button>
       </div>
     </header>
   );

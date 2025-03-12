@@ -80,7 +80,7 @@ export default function CategoryCarousel() {
       <div className="relative">
         <Swiper
           onSwiper={(swiper) => (swiperRef.current = swiper)}
-          slidesPerView={3}
+          slidesPerView={2.5}
           spaceBetween={10}
           loop={true}
           navigation={{
@@ -89,7 +89,6 @@ export default function CategoryCarousel() {
           }}
           modules={[Navigation]}
           breakpoints={{
-            640: { slidesPerView: 1.5, spaceBetween: 10 },
             768: { slidesPerView: 4.5, spaceBetween: 10 },
             1024: { slidesPerView: 5.5, spaceBetween: 10 },
           }}
@@ -121,8 +120,8 @@ export default function CategoryCarousel() {
         </Swiper>
       </div>
 
-      {/* Navigation Buttons di Bawah */}
-      <div className="flex justify-end items-center gap-4 mt-6">
+      {/* Navigation Buttons (Hanya muncul di layar md ke atas) */}
+      <div className="hidden md:flex justify-end items-center gap-4 mt-6">
         <button className="prev-button flex items-center gap-2 bg-sushi text-white px-4 py-2 rounded-full shadow-md transition hover:bg-sushiLight">
           <div className="h-10 w-10 flex items-center justify-center rounded-full bg-white text-sushi">
             <ChevronLeftIcon className="w-8 h-8" />
