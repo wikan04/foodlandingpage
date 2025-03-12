@@ -21,7 +21,7 @@ const foodItems: FoodItem[] = [
     bg: "bg-blackSqueeze",
   },
   {
-    image: "/pizza.jpg",
+    image: "/pizza2.jpg",
     alt: "Pizza Meat",
     title: "Pizza Meat",
     category: "Pizza",
