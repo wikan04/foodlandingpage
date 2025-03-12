@@ -35,7 +35,7 @@ export default function BottomNav() {
 
   return (
     <nav
-      className={`fixed bottom-0 left-0 z-10 w-full bg-white shadow-md border-t flex justify-around py-3 md:hidden transition-transform duration-300 ${
+      className={`fixed bottom-0 left-0 z-10 w-full bg-white shadow-md border-t flex justify-around py-3 lg:hidden transition-transform duration-300 ${
         isVisible ? "translate-y-0" : "translate-y-full"
       }`}
     >

@@ -121,7 +121,7 @@ export default function CategoryCarousel() {
       </div>
 
       {/* Navigation Buttons (Hanya muncul di layar md ke atas) */}
-      <div className="hidden md:flex justify-end items-center gap-4 mt-6">
+      <div className="hidden lg:flex justify-end items-center gap-4 mt-6">
         <button className="prev-button flex items-center gap-2 bg-sushi text-white px-4 py-2 rounded-full shadow-md transition hover:bg-sushiLight">
           <div className="h-10 w-10 flex items-center justify-center rounded-full bg-white text-sushi">
             <ChevronLeftIcon className="w-8 h-8" />

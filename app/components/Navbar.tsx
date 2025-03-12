@@ -31,7 +31,7 @@ export default function Navbar() {
         </a>
 
         {/* Menu untuk desktop */}
-        <nav className="hidden md:flex flex-wrap items-center text-base">
+        <nav className="hidden lg:flex flex-wrap items-center text-base">
           <a className="mr-5 text-boulder font-medium hover:text-gray-900">
             Home
           </a>
@@ -57,7 +57,7 @@ export default function Navbar() {
         </nav>
 
         {/* Tombol untuk desktop */}
-        <div className="hidden md:flex items-center">
+        <div className="hidden lg:flex items-center">
           <button className="mr-4 px-6 py-2 text-md text-gray-700 font-medium focus:outline-none">
             Masuk
           </button>
@@ -67,7 +67,7 @@ export default function Navbar() {
         </div>
 
         {/* Tombol "Daftar Sekarang" untuk mobile */}
-        <button className="md:hidden rounded-full border-0 bg-sushi px-6 py-2 text-md text-white font-medium focus:outline-none">
+        <button className="lg:hidden rounded-full border-0 bg-sushi px-6 py-2 text-md text-white font-medium focus:outline-none">
           Daftar Sekarang
         </button>
       </div>
