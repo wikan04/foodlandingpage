@@ -1,11 +1,13 @@
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+
 export default function Footer() {
   return (
     <footer className="body-font">
       <section className="container mx-auto bg-sugarCane rounded-3xl px-5 py-24">
         <div className="mx-10 grid grid-cols-1 gap-8 text-center md:grid-cols-2 md:text-left lg:grid-cols-4">
+          {/* Logo and Contact Info */}
           <div className="mx-auto w-64 md:mx-0">
             <a className="title-font flex items-center justify-center md:justify-start">
               <img src="/elemesicon.jpg" alt="" />
@@ -38,7 +40,57 @@ export default function Footer() {
             </div>
           </div>
 
-          <div>
+          {/* Categories and About Us for Mobile */}
+          <div className="block md:hidden">
+            <div className="flex flex-wrap justify-between gap-8">
+              <div>
+                <h2 className="title-font mb-3 text-xl font-bold text-gray-900">
+                  Categories
+                </h2>
+                <nav className="mb-10 list-none">
+                  <li className="mb-3">
+                    <a className="text-gray-600 hover:text-gray-800">Cupcake</a>
+                  </li>
+                  <li className="mb-3">
+                    <a className="text-gray-600 hover:text-gray-800">Pizza</a>
+                  </li>
+                  <li className="mb-3">
+                    <a className="text-gray-600 hover:text-gray-800">Kebab</a>
+                  </li>
+                  <li className="mb-3">
+                    <a className="text-gray-600 hover:text-gray-800">Salmon</a>
+                  </li>
+                  <li className="mb-3">
+                    <a className="text-gray-600 hover:text-gray-800">Dougnut</a>
+                  </li>
+                </nav>
+              </div>
+
+              <div>
+                <h2 className="title-font mb-3 text-xl font-bold text-gray-900">
+                  About Us
+                </h2>
+                <nav className="mb-10 list-none">
+                  <li className="mb-3">
+                    <a className="text-gray-600 hover:text-gray-800">
+                      About Us
+                    </a>
+                  </li>
+                  <li className="mb-3">
+                    <a className="text-gray-600 hover:text-gray-800">FAQ</a>
+                  </li>
+                  <li className="mb-3">
+                    <a className="text-gray-600 hover:text-gray-800">
+                      Report Problem
+                    </a>
+                  </li>
+                </nav>
+              </div>
+            </div>
+          </div>
+
+          {/* Categories for Desktop */}
+          <div className="hidden md:block">
             <h2 className="title-font mb-3 text-xl font-bold text-gray-900">
               Categories
             </h2>
@@ -61,7 +113,8 @@ export default function Footer() {
             </nav>
           </div>
 
-          <div>
+          {/* About Us for Desktop */}
+          <div className="hidden md:block">
             <h2 className="title-font mb-3 text-xl font-bold text-gray-900">
               About Us
             </h2>
@@ -80,6 +133,7 @@ export default function Footer() {
             </nav>
           </div>
 
+          {/* Newsletter */}
           <div>
             <h2 className="title-font mb-3 text-xl font-bold text-gray-900">
               Newsletter
@@ -113,6 +167,7 @@ export default function Footer() {
         </div>
       </section>
 
+      {/* Copyright Section */}
       <section className="">
         <div className="container mx-auto px-5 py-6 text-center">
           <p className="mt-4 text-sm text-gray-500 sm:mt-0 sm:ml-6">

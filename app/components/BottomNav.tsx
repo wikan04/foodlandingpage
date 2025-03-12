@@ -1,11 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import {
-  HomeIcon,
-  TagIcon,
-  EllipsisHorizontalIcon,
-} from "@heroicons/react/24/outline";
+import { Bars3Icon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
 export default function BottomNav() {
@@ -45,36 +41,36 @@ export default function BottomNav() {
     >
       <Link href="/">
         <button
-          className={`flex flex-col items-center text-gray-500 ${
+          className={`flex flex-col items-center text-[#757575] ${
             active === "home" ? "text-black" : ""
           }`}
           onClick={() => setActive("home")}
         >
-          <HomeIcon className="w-6 h-6" />
+          <Bars3Icon className="w-6 h-6" />
           <span className="text-xs">Home</span>
         </button>
       </Link>
 
       <Link href="#">
         <button
-          className={`flex flex-col items-center text-gray-500 ${
+          className={`flex flex-col items-center text-[#757575] ${
             active === "promotions" ? "text-black" : ""
           }`}
           onClick={() => setActive("promotions")}
         >
-          <TagIcon className="w-6 h-6" />
+          <Bars3Icon className="w-6 h-6" />
           <span className="text-xs">Promotions</span>
         </button>
       </Link>
 
       <Link href="#">
         <button
-          className={`flex flex-col items-center text-gray-500 ${
+          className={`flex flex-col items-center text-[#757575] ${
             active === "others" ? "text-black" : ""
           }`}
           onClick={() => setActive("others")}
         >
-          <EllipsisHorizontalIcon className="w-6 h-6" />
+          <Bars3Icon className="w-6 h-6" />
           <span className="text-xs">Others</span>
         </button>
       </Link>
