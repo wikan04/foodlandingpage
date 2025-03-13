@@ -6,9 +6,9 @@ export default function Footer() {
   return (
     <footer className="body-font">
       <section className="container mx-auto bg-sugarCane rounded-3xl px-5 py-24">
-        <div className="mx-10 grid grid-cols-1 gap-8 text-center md:grid-cols-2 md:text-left lg:grid-cols-4">
+        <div className="mx-10 grid grid-cols-1 gap-12 text-left sm:grid-cols-2 xl:grid-cols-4">
           {/* Logo and Contact Info */}
-          <div className="mx-auto w-64 md:mx-0">
+          <div className="mx-auto w-auto md:mx-0">
             <a className="title-font flex items-center justify-center md:justify-start">
               <img src="/elemesicon.jpg" alt="" />
             </a>
