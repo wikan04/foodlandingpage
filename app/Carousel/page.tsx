@@ -109,7 +109,7 @@ export default function CategoryCarousel() {
                 className={`group relative flex flex-col items-center justify-center w-auto h-[175px] rounded-xl shadow-md overflow-hidden transition-transform duration-300 ${category.bg} hover:scale-105`}
               >
                 <div
-                  className="absolute inset-0 bg-cover bg-center opacity-0 group-hover:opacity-60 transition-opacity duration-300"
+                  className="absolute inset-0 bg-cover bg-center opacity-0 group-hover:opacity-10 transition-opacity duration-300"
                   style={{ backgroundImage: `url(${category.bgImage})` }}
                 />
 
@@ -118,8 +118,8 @@ export default function CategoryCarousel() {
                   <Image
                     src={category.image}
                     alt={category.name}
-                    layout="fill"
-                    objectFit="contain"
+                    width={64}
+                    height={64}
                   />
                 </div>
                 <p className="font-bold text-md relative z-10">
