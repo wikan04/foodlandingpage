@@ -7,55 +7,63 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
+import CupcakeIcon from "@/public/carouselicon/cupcakeicon.png";
+import PizzaIcon from "@/public/carouselicon/pizzaicon.png";
+import KebabIcon from "@/public/carouselicon/kebabicon.png";
+import SalmonIcon from "@/public/carouselicon/salmonicon.png";
+import SalmonIcon2 from "@/public/carouselicon/salmonicon.png";
+import DoughnutIcon from "@/public/carouselicon/doughnuticon.png";
+import DoughnutIcon2 from "@/public/carouselicon/doughnuticon.png";
+import Image from "next/image";
 
 const categories = [
   {
     name: "Cupcake",
     items: 22,
-    image: "🍰",
-    bg: "bg-green-100",
+    image: CupcakeIcon,
+    bg: "bg-riceFlower",
     bgImage: "/background-hero-bold.jpg",
   },
   {
     name: "Pizza",
     items: 25,
-    image: "🍕",
-    bg: "bg-gray-100",
+    image: PizzaIcon,
+    bg: "bg-blackSqueeze",
     bgImage: "/background-hero-bold.jpg",
   },
   {
     name: "Kebab",
     items: 12,
-    image: "🌯",
-    bg: "bg-blue-100",
+    image: KebabIcon,
+    bg: "bg-linkWater",
     bgImage: "/background-hero-bold.jpg",
   },
   {
     name: "Salmon",
     items: 22,
-    image: "🍣",
-    bg: "bg-red-100",
+    image: SalmonIcon,
+    bg: "bg-amour",
     bgImage: "/background-hero-bold.jpg",
   },
   {
     name: "Doughnut",
     items: 11,
-    image: "🍩",
-    bg: "bg-yellow-100",
+    image: DoughnutIcon,
+    bg: "bg-coconutCream",
     bgImage: "/background-hero-bold.jpg",
   },
   {
-    name: "Burger",
-    items: 30,
-    image: "🍔",
-    bg: "bg-purple-100",
+    name: "Salmon",
+    items: 22,
+    image: SalmonIcon2,
+    bg: "bg-coconutCream",
     bgImage: "/background-hero-bold.jpg",
   },
   {
-    name: "Taco",
-    items: 18,
-    image: "🌮",
-    bg: "bg-orange-100",
+    name: "Doughnut",
+    items: 11,
+    image: DoughnutIcon2,
+    bg: "bg-linkWater",
     bgImage: "/background-hero-bold.jpg",
   },
 ];
@@ -80,7 +88,7 @@ export default function CategoryCarousel() {
       <div className="relative">
         <Swiper
           onSwiper={(swiper) => (swiperRef.current = swiper)}
-          slidesPerView={2.5}
+          slidesPerView={1.5}
           spaceBetween={10}
           loop={true}
           navigation={{
@@ -89,8 +97,9 @@ export default function CategoryCarousel() {
           }}
           modules={[Navigation]}
           breakpoints={{
-            768: { slidesPerView: 4.5, spaceBetween: 10 },
-            1024: { slidesPerView: 5.5, spaceBetween: 10 },
+            768: { slidesPerView: 3.5, spaceBetween: 10 },
+            1024: { slidesPerView: 4.5, spaceBetween: 10 },
+            1440: { slidesPerView: 5.5, spaceBetween: 10 },
           }}
           className="mt-4"
         >
@@ -105,9 +114,14 @@ export default function CategoryCarousel() {
                 />
 
                 {/* Content */}
-                <span className="text-4xl mb-2 relative z-10">
-                  {category.image}
-                </span>
+                <div className="relative z-10 w-16 h-16">
+                  <Image
+                    src={category.image}
+                    alt={category.name}
+                    layout="fill"
+                    objectFit="contain"
+                  />
+                </div>
                 <p className="font-bold text-md relative z-10">
                   {category.name}
                 </p>
